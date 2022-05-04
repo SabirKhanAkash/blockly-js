@@ -1,0 +1,46 @@
+<!-- SABIR KHAN AKASH ~ @ 22 APRIL 2022 ~ 4175.akash@gmail.com -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>CuriousJr Assignment</title>
+  <script src="assets/vendor/blockly_compressed.js"></script>
+  <script src="assets/vendor/blocks_compressed.js"></script>
+  <script src="assets/vendor/javascript_compressed.js"></script>
+  <script src="assets/vendor/jquery-3.5.1.min.js"></script>
+  <script src="assets/vendor/msg-en.js"></script>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+  <div id="blocklyDiv"></div>
+  <div class="game">
+    <div>
+      <div id="inputBox" class="text-input"></div>
+      <div class="button-container">
+        <button id="runBtn" class="button primary"><span>Run</span></button>&nbsp;&nbsp;&nbsp;
+        <button id="resetBtn" class="button secondary"><span>Reset</span></button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 
+		Resource for tool to create custom blocks:
+		https://blockly-demo.appspot.com/static/demos/blockfactory/index.html 
+	-->
+
+  <xml xmlns="https://developers.google.com/blockly/xml" id="toolbox" style="display: flex">
+    <!-- block for bot -->
+    <block type="bot"></block>   
+    
+    <!-- block for dropdown menu -->
+    <block type="dropdown"></block>
+  </xml>
+
+  <script src="assets/scripts/blocks.js"></script>
+
+</body>
+
+</html>
