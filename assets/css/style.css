@@ -1,0 +1,79 @@
+/* SABIR KHAN AKASH ~ @ 22 APRIL 2022 ~ 4175.akash@gmail.com */
+
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+
+body {
+  background-color: #fff;
+  font-family: sans-serif;
+  font-family: "Roboto", sans-serif;
+}
+
+#blocklyDiv {
+  height: 700px;
+  width: 1395px;
+}
+
+.game {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  width: 500px;
+  height: 695px;
+  border: 2px dashed #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f3f0f1;
+}
+
+.game .button {
+  display: inline;
+  font-size: 16px;
+  min-width: 100px;
+  background-color: #000;
+  border-radius: 10px;
+  border: 0;
+  padding: 10px 16px;
+  color: #fff;
+  font-weight: 700;
+  align-items: center;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+}
+.game .button.primary {
+  background-color: #0091ff;
+}
+
+.game .button.secondary {
+  background-color: #ff7300;
+}
+
+.game .button-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+}
+
+.game .text-input {
+  padding: 8px;
+  min-height: 20px;
+  margin-bottom: 20px;
+  border: 2px solid #000;
+  border-radius: 5px;
+  text-align: center;
+}
+
+/* MAKING RESPONSIVE TO SMALLER SIZED SCREEN DEVICES */
+
+@media(max-width:1350px){
+  .game,
+  #blocklyDiv{
+    width: 100%;
+    height: 450px;
+    font-size: 200%;
+    position: relative;
+  }
+}
+
